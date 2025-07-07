@@ -23,7 +23,6 @@ const AddBookModal = ({ isOpen, onClose }: AddBookModalProps) => {
     imageUrl: ''
   });
 
-<<<<<<< HEAD
   const handleSubmit = async (e: React.FormEvent) => {
   e.preventDefault();
 
@@ -53,23 +52,7 @@ const AddBookModal = ({ isOpen, onClose }: AddBookModalProps) => {
     console.error("Error adding book:", error);
   }
 };
-=======
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Here you would typically save the book to your database
-    console.log('Adding book:', formData);
-    onClose();
-    // Reset form
-    setFormData({
-      title: '',
-      author: '',
-      genre: '',
-      status: 'To-Read',
-      notes: '',
-      imageUrl: ''
-    });
-  };
->>>>>>> 4d957c0cd2fe3a6ad8c549598f14a12ca69bd9af
+
 
   const handleInputChange = (field: string, value: string) => {
     setFormData(prev => ({ ...prev, [field]: value }));
