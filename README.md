@@ -1,77 +1,75 @@
-<<<<<<< HEAD
+📚 Bookwise – Personal Book Management App
+Bookwise is a full-stack web application that allows users to manage their personal book collection. Users can add books, track reading status, search, and categorize books into To-Read, Reading, and Completed tabs.
 
-## Project info
+🚀 Features
+📖 Add books with title, author, genre, image URL, notes, and reading status
 
-=======
+🔍 Search books by title or author
 
+📂 Categorize books into “To-Read”, “Reading”, or “Completed”
 
-## Project info
+🖼️ Book cover image preview
 
+✅ Responsive design with Tailwind CSS
 
+🧠 Built with MERN stack + TypeScript
 
->>>>>>> 4d957c0cd2fe3a6ad8c549598f14a12ca69bd9af
-## How can I edit this code?
+🛠️ Tech Stack
+Frontend	Backend	Database
+React + TypeScript	Node.js + Express + TypeScript	MongoDB (local)
+Tailwind CSS	RESTful APIs	Mongoose ORM
 
+📁 Folder Structure
+css
+Copy
+Edit
+bookwise/
+├── backend/
+│   ├── src/
+│   │   ├── config/
+│   │   │   └── db.ts
+│   │   ├── models/
+│   │   │   └── Book.ts
+│   │   ├── routes/
+│   │   │   └── bookRoutes.ts
+│   │   ├── controllers/
+│   │   │   └── bookController.ts
+│   │   └── index.ts
+├── frontend/
+│   └── src/
+│       └── components/
+│           ├── Library.tsx
+│           ├── AddBookModal.tsx
+│           └── Header.tsx
+⚙️ Setup Instructions
+1. Clone the repo
+bash
+Copy
+Edit
+git clone https://github.com/yourusername/bookwise.git
+cd bookwise
+2. Backend Setup
+bash
+Copy
+Edit
+cd backend
+npm install
+Create a .env file in backend/ and add:
 
-<<<<<<< HEAD
+env
+Copy
+Edit
+MONGO_URI=mongodb://localhost:27017/bookwise
+Run backend server:
 
-=======
-
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+bash
+Copy
+Edit
+npx ts-node src/index.ts
+3. Frontend Setup
+bash
+Copy
+Edit
+cd frontend
+npm install
 npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/b1099f7a-d3a8-4344-91e8-9ea5ef944e5e) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
