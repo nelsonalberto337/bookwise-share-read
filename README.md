@@ -41,35 +41,27 @@ bookwise/
 │           ├── Library.tsx
 │           ├── AddBookModal.tsx
 │           └── Header.tsx
+
+
+
+
 ⚙️ Setup Instructions
 1. Clone the repo
-bash
-Copy
-Edit
 git clone https://github.com/yourusername/bookwise.git
 cd bookwise
+
 2. Backend Setup
-bash
-Copy
-Edit
 cd backend
 npm install
+
 Create a .env file in backend/ and add:
-
-env
-Copy
-Edit
 MONGO_URI=mongodb://localhost:27017/bookwise
-Run backend server:
 
-bash
-Copy
-Edit
+Run backend server:
 npx ts-node src/index.ts
+
 3. Frontend Setup
-bash
-Copy
-Edit
 cd frontend
+
 npm install
 npm run dev
